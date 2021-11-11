@@ -32,6 +32,7 @@ class MyPanel extends JPanel implements Runnable {
 	  MyPanel(){
 		  runner = new Thread(this);
 		  runner.start();
+		  
 	  }
 
 	  public void run() {
