@@ -21,6 +21,7 @@ public class Test5 extends JFrame {
 			g.setFont(new Font("고딕체",Font.BOLD,30));
 			g.drawString("자바는 재밌다.~~", 30,60);
 			g.drawString("얼마나? 하늘만큼 땅만큼 !!!!", 60, 160);
+
 		}
 	}
 

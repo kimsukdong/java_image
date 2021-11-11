@@ -2,6 +2,7 @@ package week10;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 public class Lamp2 extends JFrame {
 	Container contentPane;
@@ -26,24 +27,20 @@ public class Lamp2 extends JFrame {
 		
 		public void run() {
 			int n=0;
-			while(true) { // 무한 루프
-				if(n == 0)
-					c1 = Color.PINK;
-				else if(n == 1)
-					c1 = Color.MAGENTA;
-				else if(n == 2)
-					c1 = Color.YELLOW;
+			while(true) {
 
-				// n을 0과 1로 번갈아 변경
-				if(n == 0) n = 1;
-				else if(n == 1) n=2;
-				else n = 0;
+				Random r= new Random();
+				int x = r.nextInt(256);
+				int y = r.nextInt(256);
+				int z = r.nextInt(256);
+				
+				c1 = new Color(x,y,z);
 				
 				try {
-					Thread.sleep(200); // 0.5초동안 잠을 잔다.
+					Thread.sleep(500); 
 				}
 				catch(InterruptedException e) {
-					return; // 예외가 발생하면 스레드 종료
+					return; 
 				}
 				repaint();
 			}

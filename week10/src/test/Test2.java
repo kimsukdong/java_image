@@ -35,6 +35,8 @@ class MyPanel2 extends JPanel {
 		g.setColor(Color.blue);
 		g.drawLine(100,100,200,100);
 		g.drawLine(200,100,200,200);
+		
+
 	}
 
 }
