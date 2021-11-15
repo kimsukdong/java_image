@@ -18,7 +18,7 @@ public class Test5 extends JFrame {
 			super.paintComponent(g);
 	//		g.setColor(new Color(255,0,0));
 			g.setColor(new Color(0x771fbf));
-			g.setFont(new Font("°íµñÃ¼",Font.BOLD,30));
+			g.setFont(new Font("TimesRoman",Font.BOLD,30));
 			g.drawString("ÀÚ¹Ù´Â Àç¹Õ´Ù.~~", 30,60);
 			g.drawString("¾ó¸¶³ª? ÇÏ´Ã¸¸Å­ ¶¥¸¸Å­ !!!!", 60, 160);
 

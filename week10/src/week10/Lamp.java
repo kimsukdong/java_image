@@ -20,10 +20,14 @@ public class Lamp extends JFrame {
 		public void paintComponent(Graphics g) {
 			super.paintComponent(g);
 			
+			Graphics2D g2 = (Graphics2D) g;
+			g2.setStroke(new BasicStroke(2));
+			
 		    // the platform        
 			g.setColor(Color.BLUE  );
 		    g.fillRect(0,250,300,50);                 
-		                                               
+
+		  
 		    // the base of the lamp      
 		    g.setColor(Color.GRAY );
 		    g.drawLine(125,250,125,160);               
@@ -33,15 +37,17 @@ public class Lamp extends JFrame {
 		    g.setColor(new Color(200,100,100));
 		    g.drawArc(85,157,130,50,-67,312);          
 		    g.drawArc(85,87,130,50,62,58);             
-		                                               
+		                                              
 		    g.drawLine(85,177,119,89);                 
 		    g.drawLine(215,177,181,89);                
-		                                               
+		                                                 
 		    // pattern on the shade           
 		    g.setColor(c1);
 		    g.fillArc(78,120,40,40,63,-174);           
 		    g.fillOval(120,96,40,40);                  
 		    g.fillArc(173,100,40,40,110,180);  
+		    
+		   
 		}
 	}
 

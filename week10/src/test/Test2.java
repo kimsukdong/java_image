@@ -15,7 +15,9 @@ public class Test2 extends JFrame{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new Test2();
+		Test2 tt = new Test2();
+		
+		System.out.println(tt.getName());
 	}
 
 }
